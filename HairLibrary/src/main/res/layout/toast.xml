@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/toastHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/salonlogo"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/z_info1"
+        android:scaleType="centerCrop"
+        android:alpha="0.8"/>
+    <TextView
+        android:id="@+id/txtTOASTMessage"
+        android:layout_below="@+id/toastHeader"
+        android:layout_width="match_parent"
+        android:text="Sorry there was an error"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
