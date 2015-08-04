@@ -20,6 +20,10 @@
             android:name=".app.DashboardActivity"
             android:label="@string/title_activity_dashboard" >
         </activity>
+        <activity
+            android:name=".app.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
     </application>
 
 </manifest>

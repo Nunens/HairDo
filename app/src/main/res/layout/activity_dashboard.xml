@@ -21,135 +21,28 @@
             android:id="@+id/dashheader"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:gravity="center"
-            android:textStyle="bold|italic"
-            android:text="HairDo, Where Customers meet Stylists" />
+            android:text="HairDo, Where Customers meet Stylists"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
 
-        <RelativeLayout
-            android:id="@+id/first"
+        <ListView
+            android:id="@+id/stylists"
             android:layout_below="@+id/dashheader"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_above="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></ListView>
 
-            <ImageView
-                android:id="@+id/d1"
-                android:layout_width="125dp"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:alpha="0.4"
-                android:src="@drawable/style1" />
-
-            <ImageView
-                android:id="@+id/d2"
-                android:layout_below="@+id/dashheader"
-                android:layout_width="125dp"
-                android:alpha="0.4"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:layout_toRightOf="@+id/d1"
-                android:src="@drawable/style2" />
-
-            <ImageView
-                android:id="@+id/d3"
-                android:layout_below="@+id/dashheader"
-                android:layout_width="125dp"
-                android:alpha="0.4"
-                android:scaleType="fitXY"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:src="@drawable/style3" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/second"
-            android:layout_below="@+id/first"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/d1"
-                android:layout_width="125dp"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:alpha="0.4"
-                android:src="@drawable/style4" />
-
-            <ImageView
-                android:id="@+id/d2"
-                android:layout_below="@+id/dashheader"
-                android:layout_width="125dp"
-                android:alpha="0.4"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:layout_toRightOf="@+id/d1"
-                android:src="@drawable/style5" />
-
-            <ImageView
-                android:id="@+id/d3"
-                android:layout_below="@+id/dashheader"
-                android:layout_width="125dp"
-                android:alpha="0.4"
-                android:scaleType="fitXY"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:src="@drawable/style6" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/third"
-            android:layout_below="@+id/second"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/d1"
-                android:layout_width="125dp"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:alpha="0.4"
-                android:src="@drawable/style7" />
-
-            <ImageView
-                android:id="@+id/d2"
-                android:layout_below="@+id/dashheader"
-                android:layout_width="125dp"
-                android:alpha="0.4"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:layout_toRightOf="@+id/d1"
-                android:src="@drawable/style8" />
-
-            <ImageView
-                android:id="@+id/d3"
-                android:layout_below="@+id/dashheader"
-                android:layout_width="125dp"
-                android:alpha="0.4"
-                android:scaleType="fitXY"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"
-                android:layout_height="150dp"
-                android:src="@drawable/style9" />
-        </RelativeLayout>
         <TextView
             android:id="@+id/footer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_centerInParent="true"
-            android:textStyle="bold|italic"
             android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/copyright"
             android:text=" HairDo"
-            android:drawableLeft="@drawable/copyright"/>
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
 
 
     </RelativeLayout>
